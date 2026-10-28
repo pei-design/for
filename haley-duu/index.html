@@ -1,0 +1,431 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow">
+<title>給 阿民 的一頁｜Angel&#x27;s Liquid</title><meta name="description" content="從安安邊緣子到麻姑師太，你一直在拍自己想拍的東西。這一頁想留給螢幕外的阿民，我們把你的故事和我們的故事整理成六個小章節，慢慢看就好。">
+<meta property="og:title" content="給 阿民 的一頁｜Angel&#x27;s Liquid"><meta property="og:description" content="從安安邊緣子到麻姑師太，你一直在拍自己想拍的東西。這一頁想留給螢幕外的阿民，我們把你的故事和我們的故事整理成六個小章節，慢慢看就好。"><meta property="og:image" content="https://pei-design.github.io/for/assets/img/group.jpg"><meta property="og:url" content="https://pei-design.github.io/for/haley-duu/"><meta name="theme-color" content="#D12A3B">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700;900&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<style>/* Layout: a six-chapter booklet for one creator — sticky chapter rail, creator story → brand story → where they meet → her day → guess → collaborate; brand crimson, single light look */
+:root{
+  --crimson:#D12A3B; --crimson-deep:#A81E2D; --ink:#17181B; --text:#2A2B2F; --muted:#6B6E75;
+  --white:#FFFFFF; --page:#FBFAFA; --blush:#FCEEF0; --blush-2:#F4D6DB; --line:#EDE4E6; --marker:#FFF0A3;
+  --f-serif:"Noto Serif TC","Songti TC",serif;
+  --f-sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--page);color:var(--text);font-family:var(--f-sans);font-size:16px;line-height:1.85}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--white)}
+.band{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.inner{max-width:1000px;margin:0 auto}
+h1,h2,h3{font-family:var(--f-serif);color:var(--ink);margin:0;text-wrap:balance;line-height:1.4}
+p{margin:0}
+img{display:block;max-width:100%}
+.label{font-family:var(--f-serif);font-weight:700;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--crimson)}
+mark{background:linear-gradient(transparent 55%,var(--marker) 55%);color:inherit;padding:0 2px;white-space:nowrap}
+button{font:inherit}
+button:focus-visible,a:focus-visible{outline:2px solid var(--crimson);outline-offset:3px}
+
+/* chapter rail */
+.rail{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
+.rail .inner{display:flex;align-items:center;gap:14px;padding-block:10px;overflow-x:auto;scrollbar-width:none}
+.rail .inner::-webkit-scrollbar{display:none}
+.rail .brand{font-family:var(--f-serif);font-weight:700;color:var(--ink);white-space:nowrap;font-size:14px}
+.rail nav{display:flex;gap:4px;margin-left:auto}
+.rail a{white-space:nowrap;text-decoration:none;font-size:13px;color:var(--muted);padding:5px 10px;border-radius:999px}
+.rail a b{font-family:var(--f-serif);color:var(--crimson);margin-right:4px}
+.rail a.on{background:var(--blush);color:var(--crimson);font-weight:700}
+.bar{height:2px;background:var(--crimson);width:0;transition:width .15s linear}
+
+/* chapter frame */
+.ch{padding-block:84px}
+.ch-head{display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:start;margin-bottom:40px;max-width:46em}
+.ch-no{font-family:var(--f-serif);font-weight:900;font-size:64px;line-height:.9;color:var(--blush-2)}
+.ch-head h2{font-size:clamp(26px,3.8vw,36px);font-weight:900;margin-top:6px}
+.ch-head p{color:var(--muted);margin-top:10px}
+.alt{background:var(--white)}
+
+/* cover */
+.cover{background:var(--crimson);color:var(--white)}
+.cover .inner{padding-block:64px 72px;display:grid;grid-template-columns:1.2fr .8fr;gap:44px;align-items:end}
+.cover .label{color:#FFD6DB}
+.cover h1{color:var(--white);font-size:clamp(34px,5.8vw,58px);font-weight:900;line-height:1.22;margin:16px 0 20px}
+.cover p{color:#FFE9EC;max-width:30em}
+.toc{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:18px;padding:20px 22px;display:flex;flex-direction:column;gap:2px}
+.toc .label{margin-bottom:8px}
+.toc a{display:grid;grid-template-columns:30px 1fr;color:var(--white);text-decoration:none;padding:7px 0;border-top:1px solid rgba(255,255,255,.16);font-size:15px}
+.toc a:first-of-type{border-top:0}
+.toc a b{font-family:var(--f-serif);color:#FFD6DB}
+.toc a:hover span{text-decoration:underline}
+.from{margin-top:24px;font-size:14px;color:#FFD6DB}
+@media (max-width:800px){.cover .inner{grid-template-columns:1fr}}
+
+/* ch1 timeline */
+.tl{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--ink)}
+.tl li{padding:20px 18px 0 0;display:flex;flex-direction:column;gap:6px;min-width:0}
+.tl .yr{font-family:var(--f-serif);font-weight:900;font-size:30px;color:var(--crimson);font-variant-numeric:tabular-nums;line-height:1.2}
+.tl b{color:var(--ink);font-size:17px}
+.tl span{font-size:15px;color:var(--muted)}
+@media (max-width:800px){.tl{grid-template-columns:1fr 1fr;row-gap:26px}}
+@media (max-width:440px){.tl{grid-template-columns:1fr}}
+.quote{margin-top:48px;background:var(--blush);border-radius:20px;padding:34px 36px;display:grid;grid-template-columns:auto 1fr;gap:22px}
+.quote .q{font-family:var(--f-serif);font-size:72px;line-height:.8;color:var(--crimson)}
+.quote blockquote{margin:0;font-family:var(--f-serif);font-weight:700;font-size:clamp(20px,2.8vw,26px);color:var(--ink);line-height:1.6}
+.quote cite{display:block;margin-top:10px;font-style:normal;font-size:13px;color:var(--muted)}
+.quote p{margin-top:16px}
+@media (max-width:560px){.quote{grid-template-columns:1fr;padding:26px}}
+
+/* ch2 brand story: alternating image/text rows */
+.rows{display:flex;flex-direction:column;gap:56px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.row.flip-r .media{order:2}
+.row .media{background:var(--white);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.row .media img{width:100%;height:auto}
+.row .txt{display:flex;flex-direction:column;gap:12px}
+.row .txt h3{font-size:clamp(21px,2.6vw,25px);font-weight:900}
+.row .big{font-family:var(--f-serif);font-weight:900;font-size:clamp(40px,6vw,56px);color:var(--crimson);line-height:1}
+.row .big small{font-size:18px;color:var(--muted);font-weight:700;margin-left:6px}
+@media (max-width:800px){.row{grid-template-columns:1fr;gap:20px}.row.flip-r .media{order:0}}
+.proofs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:56px}
+.proof{background:var(--blush);border-radius:14px;padding:16px 12px;text-align:center}
+.proof b{display:block;font-family:var(--f-serif);font-weight:900;font-size:24px;color:var(--crimson);line-height:1.25}
+.proof span{font-size:13px;color:var(--muted)}
+@media (max-width:700px){.proofs{grid-template-columns:1fr 1fr}}
+.doc{margin-top:12px;background:var(--ink);color:#D9DADD;border-radius:14px;padding:14px 18px;font-size:14px}
+.doc b{color:var(--white);font-family:var(--f-serif)}
+
+/* ch3 meet */
+.meet{display:flex;flex-direction:column;gap:12px}
+.pair{display:grid;grid-template-columns:1fr 64px 1fr;align-items:stretch;gap:0}
+.pair > div{background:var(--white);border:1px solid var(--line);padding:20px 22px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.pair .you{border-radius:16px 0 0 16px}
+.pair .us{border-radius:0 16px 16px 0;background:var(--blush);border-color:var(--blush-2)}
+.pair .mid{background:var(--crimson);border:0;color:var(--white);align-items:center;justify-content:center;font-family:var(--f-serif);font-weight:900;font-size:15px;padding:8px;text-align:center;line-height:1.4}
+.pair .who{font-size:12px;letter-spacing:.12em;font-weight:700;color:var(--muted);font-family:var(--f-serif)}
+.pair b{font-family:var(--f-serif);font-size:18px;color:var(--ink)}
+@media (max-width:640px){.pair{grid-template-columns:1fr}.pair .you{border-radius:16px 16px 0 0}.pair .us{border-radius:0 0 16px 16px}.pair .mid{padding:6px}}
+
+/* ch4 day */
+.scenes{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.scene{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:20px 18px;text-align:left;cursor:pointer;display:flex;flex-direction:column;gap:8px;color:inherit;min-width:0}
+.scene .t{font-family:var(--f-serif);font-size:13px;letter-spacing:.1em;color:var(--crimson);font-weight:700}
+.scene b{font-family:var(--f-serif);font-size:19px;color:var(--ink);line-height:1.45}
+.scene span{font-size:14px;color:var(--muted)}
+.scene[aria-pressed="true"]{border-color:var(--crimson);background:var(--blush);box-shadow:0 0 0 2px var(--blush-2)}
+@media (max-width:860px){.scenes{grid-template-columns:1fr 1fr}}
+
+.answer{margin-top:16px;background:var(--white);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:grid;grid-template-columns:220px 1fr}
+.answer img{width:100%;height:100%;object-fit:cover;background:#F2F1F3}
+.answer .body{padding:24px 26px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.answer .name{font-family:var(--f-serif);font-weight:900;font-size:22px;color:var(--ink)}
+.answer .spec{font-size:14px;color:var(--crimson);font-weight:700}
+@media (max-width:600px){.answer{grid-template-columns:1fr}.answer img{height:220px}}
+.routine{margin-top:64px;background:var(--ink);border-radius:24px;padding:34px;display:grid;grid-template-columns:240px 1fr;gap:34px;align-items:center;color:#D9DADD}
+.routine h3{color:var(--white);font-size:24px;font-weight:900}
+.ring{position:relative;width:100%;max-width:240px;aspect-ratio:1}
+.ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.ring .face{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}
+.ring .sec{font-family:var(--f-serif);font-weight:900;font-size:60px;line-height:1;color:var(--white);font-variant-numeric:tabular-nums}
+.ring .face small{font-size:12px;color:#A9ABB1;letter-spacing:.1em}
+.rsteps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+.rstep{border-radius:14px;overflow:hidden;background:#24262B;border:2px solid transparent;transition:border-color .3s,opacity .3s;opacity:.55}
+.rstep.on{border-color:var(--crimson);opacity:1}
+.rstep img{width:100%;aspect-ratio:1;object-fit:cover}
+.rstep div{padding:10px 12px;font-size:13px;line-height:1.5}
+.rstep b{display:block;color:var(--white);font-family:var(--f-serif);font-size:15px}
+.go{margin-top:18px;background:var(--crimson);color:var(--white);border:0;border-radius:999px;padding:11px 22px;font-weight:700;cursor:pointer}
+.go:hover{background:var(--crimson-deep)}
+@media (max-width:760px){.routine{grid-template-columns:1fr;padding:24px}.ring{margin:0 auto;max-width:200px}}
+
+
+/* ch5 flips */
+.flips{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.flip{perspective:900px;border:0;background:none;padding:0;cursor:pointer;min-height:220px;text-align:left}
+.flip .card{position:relative;width:100%;height:100%;min-height:220px;transition:transform .6s;transform-style:preserve-3d}
+.flip[aria-pressed="true"] .card{transform:rotateY(180deg)}
+.flip .side{position:absolute;inset:0;border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:10px;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.flip .front{background:var(--white);border:1.5px dashed var(--blush-2)}
+.flip .front b{font-family:var(--f-serif);font-size:20px;color:var(--ink);line-height:1.45}
+.flip .front span{margin-top:auto;font-size:13px;color:var(--crimson);font-weight:700}
+.flip .back{background:var(--crimson);color:var(--white);transform:rotateY(180deg)}
+.flip .back .t{font-size:12px;letter-spacing:.14em;color:#FFD6DB;font-family:var(--f-serif);font-weight:700}
+@media (prefers-reduced-motion:reduce){.flip .card{transition:none}}
+@media (max-width:780px){.flips{grid-template-columns:1fr}}
+
+/* ch6 */
+.ideas{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.idea{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:8px}
+.idea .fmt{font-size:12px;font-weight:700;color:var(--crimson);letter-spacing:.06em}
+.idea h3{font-size:19px;font-weight:900}
+.idea p{font-size:15px;color:var(--muted)}
+.aside{margin-top:16px;font-size:14px;color:var(--muted);border-left:3px solid var(--crimson);padding-left:12px}
+@media (max-width:780px){.ideas{grid-template-columns:1fr}}
+.steps{list-style:none;margin:48px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:s}
+.steps li{border-top:2px solid var(--ink);padding-top:14px;display:flex;flex-direction:column;gap:4px}
+.steps li::before{counter-increment:s;content:"STEP 0" counter(s);font-family:var(--f-serif);font-size:12px;letter-spacing:.14em;color:var(--crimson);font-weight:700}
+.steps b{font-family:var(--f-serif);font-size:19px;color:var(--ink)}
+.steps span{color:var(--muted);font-size:15px}
+.perk{margin-top:22px;display:inline-block;background:var(--marker);color:var(--ink);font-weight:700;padding:6px 14px;border-radius:8px;font-size:15px}
+@media (max-width:640px){.steps{grid-template-columns:1fr}}
+
+/* reply */
+.reply{background:var(--white);border:1px solid var(--line);border-radius:22px;padding:34px;display:grid;grid-template-columns:.9fr 1.1fr;gap:34px}
+@media (max-width:780px){.reply{grid-template-columns:1fr;padding:24px}}
+.reply .head{display:flex;flex-direction:column;gap:10px}
+.reply .head h2{font-size:clamp(26px,3.6vw,32px);font-weight:900}
+.reply .head p{color:var(--muted)}
+.reply .form{display:flex;flex-direction:column;gap:16px;min-width:0}
+.grp{display:flex;flex-direction:column;gap:8px}
+.grp>span{font-size:14px;font-weight:700;color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{padding:9px 16px;border-radius:999px;border:1px solid var(--line);background:var(--page);color:var(--text);cursor:pointer;font-size:15px}
+.chip[aria-pressed="true"]{border-color:var(--crimson);background:var(--blush);color:var(--crimson);font-weight:700}
+label{font-size:14px;color:var(--muted);display:flex;flex-direction:column;gap:6px}
+input,textarea{font:inherit;color:var(--text);background:var(--page);border:1px solid var(--line);border-radius:12px;padding:11px 13px;width:100%}
+textarea{min-height:80px;resize:vertical}
+.send{background:var(--crimson);color:var(--white);border:0;border-radius:14px;padding:15px;font-weight:700;font-size:16px;cursor:pointer}
+.send:hover{background:var(--crimson-deep)}
+.out{background:var(--blush);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:10px}
+.out pre{margin:0;white-space:pre-wrap;font-family:var(--f-sans);font-size:15px}
+.ghost{align-self:flex-start;background:var(--white);border:1px solid var(--crimson);color:var(--crimson);border-radius:10px;padding:8px 14px;cursor:pointer;font-weight:700;font-size:14px}
+.addr{font-weight:700;color:var(--ink);user-select:all}
+.gift{display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:center;background:var(--blush);border-radius:14px;padding:10px;}
+.gift img{width:96px;height:64px;object-fit:cover;border-radius:10px}
+.gift b{display:block;font-family:var(--f-serif);color:var(--ink);font-size:17px}
+.gift span{font-size:14px;color:var(--muted)}
+.ship{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ship .wide{grid-column:1/-1}
+@media (max-width:440px){.ship{grid-template-columns:1fr}}
+label em{color:var(--crimson);font-style:normal}
+.err{color:var(--crimson);font-size:14px;font-weight:700}
+.how{margin:6px 0 0;padding:0;list-style:none;counter-reset:h;display:flex;flex-direction:column;gap:6px}
+.how li{counter-increment:h;display:flex;gap:10px;align-items:baseline;font-size:15px;color:var(--ink)}
+.how li::before{content:counter(h);flex:none;width:22px;height:22px;border-radius:50%;background:var(--crimson);color:#fff;font-size:12px;font-weight:700;display:inline-flex;align-items:center;justify-content:center}
+.ship[hidden]{display:none!important}
+
+footer{background:var(--crimson);color:#FFE9EC}
+footer .inner{padding-block:30px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:14px}
+footer b{font-family:var(--f-serif);color:var(--white);font-size:17px}
+
+/* ---------- phone ---------- */
+@media (max-width:600px){
+  body{font-size:15.5px;line-height:1.8}
+  .rail .brand{display:none}
+  .rail nav{margin-left:0}
+  .rail a{padding:5px 8px}
+  .ch{padding-block:52px}
+  .ch-head{grid-template-columns:1fr;gap:4px;margin-bottom:26px}
+  .ch-no{font-size:40px}
+  .ch-head h2{font-size:25px;margin-top:2px}
+  .cover .inner{padding-block:40px 44px;gap:28px}
+  .cover h1{font-size:30px;line-height:1.3;margin:12px 0 14px}
+  .cover h1 span{display:block}
+  .toc{padding:14px 16px}
+  .toc a{padding:6px 0;font-size:14px}
+  .tl{grid-template-columns:1fr 1fr;column-gap:14px;row-gap:18px}
+  .tl li{padding:14px 0 0}
+  .tl .yr{font-size:24px}
+  .tl b{font-size:15px}
+  .tl span{font-size:14.5px;line-height:1.65}
+  .quote{margin-top:32px;padding:22px 20px;gap:6px}
+  .quote .q{font-size:48px}
+  .quote blockquote{font-size:19px}
+  .rows{gap:36px}
+  .row .txt h3{font-size:20px}
+  .proofs{margin-top:36px}
+  .proof{padding:14px 10px}
+  .proof span,.proof small{font-size:13px}
+  .proof b{font-size:20px}
+  .pair > div{padding:14px 16px}
+  .pair b{font-size:16px}
+  .scenes{grid-template-columns:1fr 1fr;gap:8px}
+  .scene{padding:14px 12px;gap:4px}
+  .scene b{font-size:15.5px}
+  .scene span{font-size:14px;line-height:1.6}
+  .scene .t{font-size:13px}
+  .answer img{height:180px}
+  .answer .body{padding:18px}
+  .routine{margin-top:40px;padding:22px 18px;gap:18px}
+  .ring{max-width:160px}
+  .ring .sec{font-size:44px}
+  .routine h3{font-size:20px}
+  .rsteps{grid-template-columns:1fr;gap:8px}
+  .rstep{display:grid;grid-template-columns:76px 1fr;align-items:center}
+  .rstep img{aspect-ratio:1;height:76px}
+  .rstep div{padding:10px 14px;font-size:14px;line-height:1.55}
+  .rstep b{font-size:15px}
+  .go{width:100%}
+  .flip,.flip .card{min-height:150px}
+  .flip .side{padding:18px}
+  .flip .front b{font-size:18px}
+  .idea{padding:18px}
+  .steps{margin-top:36px;gap:14px}
+  .reply{padding:20px 16px;gap:22px;border-radius:18px}
+  .chip{padding:8px 13px;font-size:14px}
+  footer .inner{flex-direction:column;gap:6px}
+}
+@media (max-width:360px){.scenes{grid-template-columns:1fr}}
+/* music */
+.music{flex:none;display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--white);color:var(--muted);border-radius:999px;padding:4px 10px;font-size:12.5px;cursor:pointer;white-space:nowrap}
+.music[aria-pressed="true"]{border-color:var(--crimson);color:var(--crimson);background:var(--blush)}
+.eq{display:inline-flex;align-items:flex-end;gap:2px;height:11px}
+.eq i{width:2px;height:4px;background:currentColor;border-radius:1px}
+.music[aria-pressed="true"] .eq i{animation:eq 1s infinite ease-in-out}
+.music[aria-pressed="true"] .eq i:nth-child(2){animation-delay:.2s}.music[aria-pressed="true"] .eq i:nth-child(3){animation-delay:.4s}
+@keyframes eq{0%,100%{height:3px}50%{height:11px}}
+@media (prefers-reduced-motion:reduce){.music[aria-pressed="true"] .eq i{animation:none;height:8px}}
+.music-cta{margin-top:18px;background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:999px;padding:9px 18px;font-size:14px;font-weight:700;cursor:pointer}
+.music-cta[aria-pressed="true"]{background:#fff;color:var(--crimson)}
+.music-cta:hover{background:rgba(255,255,255,.24)}
+@media (max-width:600px){.rail .music{order:-1}}
+
+a.send{display:block;text-align:center;text-decoration:none}
+</style></head><body><div id="app"></div>
+<script>/* Shared renderer for the creator booklet site. renderSite(d) -> HTML string; bindSite(root,d) wires interactions. */
+var SITE_EMAIL='pei@trusteebio.com';
+function _e(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function _mark(t,m){t=_e(t);if(m){var em=_e(m);var i=t.indexOf(em);if(i>=0)return t.slice(0,i)+'<mark>'+em+'</mark>'+t.slice(i+em.length);}return t;}
+function _br(t){return _e(t).replace(/\n/g,'<br>');}
+var SITE_PRODUCTS={
+  toner:{img:'../assets/img/toner.jpg',name:'700V 肌光露',spec:'150 mL · 化妝水質地 · 菸鹼醯胺'},
+  ampoule:{img:'../assets/img/ampoule.jpg',name:'700V 安瓶精華',spec:'菸鹼醯胺 5% · 腺苷 · 穀胱甘肽 7,000 ppm'},
+  cream:{img:'../assets/img/cream.jpg',name:'700V 修護面霜',spec:'角鯊烷 · 腺苷 · 柔滑不黏'}
+};
+function renderSite(d){
+  d=d||{};var h=d.hero||{},c1=d.c1||{},c2=d.c2||{},c3=d.c3||{},c4=d.c4||{},c5=d.c5||{},c6=d.c6||{},rp=d.reply||{};
+  var name=d.creator_name||'',ch=d.channel||'';
+  var scenes=(c4.scenes||[]).slice(0,4),def=Math.min(Math.max(c4.default||0,0),Math.max(scenes.length-1,0));
+  var s0=scenes[def]||{},p0=SITE_PRODUCTS[s0.p]||SITE_PRODUCTS.ampoule;
+  var head=function(no,en,title,mark,intro){return '<div class="ch-head"><span class="ch-no">'+no+'</span><div><span class="label">'+en+'</span><h2>'+_mark(title,mark)+'</h2>'+(intro?'<p>'+_e(intro)+'</p>':'')+'</div></div>';};
+  var o='';
+  o+='<div class="rail band"><div class="inner"><span class="brand">Angel\'s Liquid × '+_e(ch||name)+'</span><button class="music" type="button" data-music aria-pressed="false"><span class="eq" aria-hidden="true"><i></i><i></i><i></i></span><span data-music-label>音樂</span></button><nav aria-label="章節">'
+   +'<a href="#c1"><b>1</b>你們</a><a href="#c2"><b>2</b>我們</a><a href="#c3"><b>3</b>相遇</a><a href="#c4"><b>4</b>你的一天</a><a href="#c5"><b>5</b>猜猜看</a><a href="#c6"><b>6</b>一起</a><a href="#reply"><b>✓</b>回覆</a></nav></div><div class="bar" data-bar></div></div>';
+  o+='<header class="cover band"><div class="inner"><div><span class="label">'+_e(h.eyebrow||('For '+name+' · 專屬頁面'))+'</span><h1>'+_e(h.title_l1||'')+'<br>'+_e(h.title_l2||'')+'</h1><p>'+_e(h.sub||'')+'</p><p class="from">來自 Angel\'s Liquid 台灣　Pei</p><button class="music-cta" type="button" data-music aria-pressed="false">♪ 開啟音樂，慢慢看</button></div>'
+   +'<nav class="toc" aria-label="目錄"><span class="label">Contents</span><a href="#c1"><b>01</b><span>你們的故事</span></a><a href="#c2"><b>02</b><span>我們的故事</span></a><a href="#c3"><b>03</b><span>兩個故事的相遇</span></a><a href="#c4"><b>04</b><span>鏡頭外的一天</span></a><a href="#c5"><b>05</b><span>三個你可能不知道的小事</span></a><a href="#c6"><b>06</b><span>如果我們一起</span></a></nav></div></header><main>';
+  // 1
+  o+='<section class="ch band" id="c1"><div class="inner">'+head('01','Your story · 你們的故事',c1.title,c1.mark,c1.intro)+'<ol class="tl">';
+  (c1.timeline||[]).slice(0,4).forEach(function(t){o+='<li><span class="yr">'+_e(t.k)+'</span><b>'+_e(t.b)+'</b><span>'+_e(t.s)+'</span></li>';});
+  o+='</ol>';
+  if(c1.quote&&c1.quote.text){o+='<div class="quote"><span class="q" aria-hidden="true">“</span><div><blockquote>'+_e(c1.quote.text)+'</blockquote>'+(c1.quote.cite?'<cite>'+_e(c1.quote.cite)+'</cite>':'')+(c1.quote.reflection?'<p>'+_e(c1.quote.reflection)+'</p>':'')+'</div></div>';}
+  else if(c1.reflection){o+='<div class="quote"><span class="q" aria-hidden="true">“</span><div><p style="margin:0">'+_e(c1.reflection)+'</p></div></div>';}
+  o+='</div></section>';
+  // 2
+  o+='<section class="ch band alt" id="c2"><div class="inner">'+head('02','Our story · 我們的故事',c2.title||'我們也只做一件事，做了十年',c2.mark||'做一件事',c2.intro||'Angel\'s Liquid 2016 年在首爾成立，自己的工廠、自己的研發團隊，從頭到尾只研究一個成分。')+'<div class="rows">'
+   +'<div class="row"><div class="media"><img src="../assets/img/powder.jpg" alt="穀胱甘肽原料粉末"></div><div class="txt"><span class="label">From clinic to home</span><h3>韓國醫美診所的人氣成分，變成每天在家擦的保養</h3><p>穀胱甘肽由三種胺基酸組成，是人體本來就有的抗氧化成分，在韓國醫美診所很受歡迎。'+_e(c2.bridge||'但不是每個人都有時間跑診所。我們想把它帶回家。')+'</p></div></div>'
+   +'<div class="row flip-r"><div class="media"><img src="../assets/img/liposome.jpg" alt="脂質體包覆穀胱甘肽示意圖"></div><div class="txt"><span class="label">Ten years</span><span class="big">300 → 7,000<small>ppm</small></span><h3>十年，把濃度提高約 23 倍</h3><p>穀胱甘肽不容易處理。我們用脂質體把還原型穀胱甘肽包起來，讓它穩定地傳遞。提高濃度的同時，也顧到配方、穩定度和擦起來的感覺。</p></div></div>'
+   +'<div class="row"><div class="media"><img src="../assets/img/extracts.jpg" alt="12 種天然萃取"></div><div class="txt"><span class="label">Honest formula</span><h3>12 種天然萃取，<mark>不加香精</mark></h3><p>穀胱甘肽含硫，原料本身有氣味。很多品牌會用香精蓋掉，我們選擇保留。三款都通過皮膚刺激測試，判定為無刺激，適合每天用。</p></div></div></div>'
+   +'<div class="proofs"><div class="proof"><b>10 年</b><span>只研究穀胱甘肽</span></div><div class="proof"><b>7,000</b><span>ppm 高濃度</span></div><div class="proof"><b>雙機能</b><span>韓國美白＋抗皺認證</span></div><div class="proof"><b>無刺激</b><span>三款皆通過刺激測試</span></div></div>'
+   +'<div class="doc">研發顧問　<b>韓國 NEO 整形外科 朴正一 院長</b>　韓國整形外科經驗 20 年以上</div></div></section>';
+  // 3
+  o+='<section class="ch band" id="c3"><div class="inner">'+head('03','Where we meet · 兩個故事的相遇',c3.title||'我們發現，你們跟我們很像',c3.mark||'你們跟我們很像','')+'<div class="meet">';
+  (c3.pairs||[]).slice(0,3).forEach(function(p){o+='<div class="pair"><div class="you"><span class="who">'+_e((ch||name).toUpperCase())+'</span><b>'+_e(p.you_b)+'</b><span>'+_e(p.you_s)+'</span></div><div class="mid">'+_br(p.mid)+'</div><div class="us"><span class="who">ANGEL\'S LIQUID</span><b>'+_e(p.us_b)+'</b><span>'+_e(p.us_s)+'</span></div></div>';});
+  o+='</div></div></section>';
+  // 4
+  o+='<section class="ch band alt" id="c4"><div class="inner">'+head('04','Your day · 鏡頭外的一天',c4.title||'你最常是哪一個時刻？',c4.mark||'哪一個時刻',c4.intro||'點一個，我們告訴你那個時刻最適合哪一瓶。')+'<div class="scenes" role="group" aria-label="選擇一個時刻">';
+  scenes.forEach(function(s,i){o+='<button class="scene" type="button" aria-pressed="'+(i===def)+'" data-i="'+i+'"><span class="t">'+_e(s.t)+'</span><b>'+_e(s.b)+'</b><span>'+_e(s.s)+'</span></button>';});
+  o+='</div><div class="answer" aria-live="polite"><img data-ans-img src="'+p0.img+'" alt="'+_e(p0.name)+'"><div class="body"><span class="label" data-ans-tag>'+_e(s0.t||'')+' 的你</span><span class="name" data-ans-name>'+_e(p0.name)+'</span><span class="spec" data-ans-spec>'+_e(p0.spec)+'</span><p data-ans-why>'+_e(s0.why||'')+'</p></div></div>';
+  o+='<div class="routine"><div class="ring"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="52" fill="none" stroke="#2E3035" stroke-width="6"/><circle data-arc cx="60" cy="60" r="52" fill="none" stroke="#D12A3B" stroke-width="6" stroke-linecap="round" stroke-dasharray="326.73" stroke-dashoffset="0"/></svg><div class="face"><span class="sec" data-sec>60</span><small>SECONDS</small></div></div>'
+   +'<div><span class="label" style="color:#F07A86">Your 60 seconds</span><h3>'+_e(c4.routine_title||'三個步驟，60 秒保養')+'</h3><p data-rstat>三個步驟剛好 60 秒。按開始，跟著做一次看看。</p><div class="rsteps">'
+   +'<div class="rstep on" data-rs><img src="../assets/img/step1.jpg" alt="肌光露質地"><div><b>01 肌光露</b>0–15 秒　拍勻打底</div></div>'
+   +'<div class="rstep on" data-rs><img src="../assets/img/step2.jpg" alt="安瓶精華質地"><div><b>02 安瓶精華</b>15–40 秒　按壓吸收</div></div>'
+   +'<div class="rstep on" data-rs><img src="../assets/img/step3.jpg" alt="修護面霜質地"><div><b>03 修護面霜</b>40–60 秒　最後鎖水</div></div></div>'
+   +'<button class="go" data-timer type="button">開始我的 60 秒</button></div></div></div></section>';
+  // 5
+  o+='<section class="ch band" id="c5"><div class="inner">'+head('05','Guess · 猜猜看','三個你可能不知道的小事','你可能不知道','點卡片翻到背面看答案。')+'<div class="flips">';
+  (c5.flips||[]).slice(0,3).forEach(function(f){o+='<button class="flip" type="button" aria-pressed="false"><div class="card"><div class="side front"><b>'+_e(f.q)+'</b><span>翻開看答案 →</span></div><div class="side back"><span class="t">ANSWER</span><p>'+_e(f.a)+'</p></div></div></button>';});
+  o+='</div></div></section>';
+  // 6
+  o+='<section class="ch band alt" id="c6"><div class="inner">'+head('06','Together · 如果我們一起',c6.title||'幫你們先想了三個拍攝點子',c6.mark||'三個','')+'<div class="ideas">';
+  (c6.ideas||[]).slice(0,3).forEach(function(x){o+='<div class="idea"><span class="fmt">'+_e(x.fmt)+'</span><h3>'+_e(x.title)+'</h3><p>'+_e(x.how)+'</p></div>';});
+  o+='</div><p class="aside">'+_e(c6.aside||'只是靈感，怎麼拍、拍不拍都由你們決定。')+'</p>'
+   +'<ol class="steps"><li><b>寄出三款正貨</b><span>肌光露、安瓶、面霜各一份，不需要發文。</span></li><li><b>用幾週看看</b><span>喜歡的話，再跟我們聊聊感受。</span></li><li><b>再談合作</b><span>Reels、限動或團購分潤，形式一起討論。</span></li></ol>'
+   +'<span class="perk">合作創作者可優先參加韓國總公司參訪與品牌活動</span></div></section>';
+  // reply
+  o+='<section class="ch band" id="reply"><div class="inner"><div class="reply"><div class="head"><span class="label">Reply · 回覆 Pei</span><h2>'+_e(rp.title||'看到這裡，謝謝你')+'</h2>'
+   +'<p>填好寄送資料，按「寄出回覆給 Pei」，會直接打開你的郵件，內容都幫你寫好了，按送出就完成。不想合作也沒關係，選「這次先不用」寄出一聲就好。</p>'
+   +'<ol class="how"><li>選下一步、填寄送資料</li><li>按「寄出回覆給 Pei」</li><li>在打開的郵件裡按送出</li></ol></div>'
+   +'<div class="form"><div class="gift"><img src="../assets/img/group.jpg" alt=""><div><b>三款正貨都會寄給你</b><span>700V 肌光露、安瓶精華、修護面霜各一份，不需要發文。</span></div></div>'
+   +'<div class="grp"><span>接下來想怎麼做？</span><div class="chips" role="group" aria-label="下一步"><button class="chip ac" type="button" aria-pressed="true" data-v="send">寄給我們試試</button><button class="chip ac" type="button" aria-pressed="false" data-v="more">想先多了解合作</button><button class="chip ac" type="button" aria-pressed="false" data-v="no">這次先不用</button></div></div>'
+   +'<div class="ship" data-ship><label><span>聯絡人 <em>*</em></span><input data-f="name" type="text" autocomplete="name" placeholder="收件人姓名"></label><label><span>聯絡電話 <em>*</em></span><input data-f="phone" type="tel" autocomplete="tel" placeholder="例：0912-345-678"></label><label class="wide"><span>收件地址 <em>*</em></span><input data-f="addr" type="text" autocomplete="street-address" placeholder="縣市、區、路段、門牌"></label></div>'
+   +'<p class="err" data-err role="alert" hidden></p><label>想對 Pei 說的話（可略過）<textarea data-f="note" placeholder="例：最近皮膚比較乾、想先問成分"></textarea></label>'
+   +'<a class="send" data-make href="mailto:'+SITE_EMAIL+'" target="_blank" rel="noopener" role="button">寄出回覆給 Pei　→</a><div class="out" data-out hidden><p style="font-size:14px;color:var(--ink);font-weight:700;margin:0">沒有跳出郵件的話，複製下面的內容回信給 Pei：</p><pre data-out-text></pre><button class="ghost" data-copy type="button">複製回覆</button><span data-copied style="font-size:13px;color:var(--crimson)" hidden>已複製</span>'
+   +'<p style="font-size:14px;color:var(--muted)">複製好了就回到 Pei 寄給你的信，按「回覆」貼上送出。找不到那封信的話，也可以寄到 <span class="addr">'+SITE_EMAIL+'</span></p></div></div></div></div></section></main>';
+  o+='<footer class="band"><div class="inner"><span><b>Angel\'s Liquid</b>　EST. 2016 · SEOUL　台灣由 TRUSTEE BiOMED 信賴生醫引進</span><span>這一頁只為 '+_e(ch||name)+' 製作 · Pei <span class="addr" style="color:#fff">'+SITE_EMAIL+'</span></span></div></footer>';
+  return o;
+}
+
+/* Original ambient music, synthesized live with Web Audio (no audio file, no licensing). */
+function SiteMusic(win){
+  /* Plays the licensed track "Cafe Lofi" (Pixabay, zephiramusic) from the page's own files: loop, gentle fade in/out. */
+  var A=null,on=false,fade=null,TARGET=0.55,cbs=[];
+  function el(){ if(!A){ A=new win.Audio('../assets/audio/cafe-lofi.mp3'); A.loop=true; A.preload='auto'; A.volume=0;
+      ['play','playing','pause'].forEach(function(ev){A.addEventListener(ev,function(){cbs.forEach(function(f){try{f();}catch(e){}});});}); } return A; }
+  function ramp(to,ms,done){ var a=el(); if(fade) win.clearInterval(fade); var from=a.volume,t0=Date.now();
+    fade=win.setInterval(function(){ var k=Math.min(1,(Date.now()-t0)/ms); try{a.volume=Math.max(0,Math.min(1,from+(to-from)*k));}catch(e){} if(k>=1){ win.clearInterval(fade); fade=null; if(done) done(); } },50); }
+  function tryPlay(){ var a=el(); var p=a.play(); if(p&&p.then){ p.then(function(){ ramp(TARGET,2200); }).catch(function(){}); } else ramp(TARGET,2200); }
+  return {
+    start:function(){ on=true; tryPlay(); },
+    stop:function(){ on=false; if(A) ramp(0,900,function(){ if(!on) A.pause(); }); },
+    unlock:function(){ if(on&&(!A||A.paused)) tryPlay(); },
+    playing:function(){ return !!(on&&A&&!A.paused); },
+    isOn:function(){ return on; },
+    onState:function(fn){ if(cbs.indexOf(fn)<0) cbs.push(fn); },
+    toggle:function(){ if(on) this.stop(); else this.start(); return on; },
+    supported:typeof win.Audio==='function'
+  };
+}
+function bindSite(root,d,win,opts){
+  win=win||window;var doc=root.ownerDocument||document;
+  var q=function(s){return root.querySelector(s);},qa=function(s){return Array.prototype.slice.call(root.querySelectorAll(s));};
+  var scenes=((d.c4||{}).scenes||[]).slice(0,4),sign=(d.reply||{}).sign||d.creator_name||'';
+  // rail
+  var links=qa('.rail nav a'),bar=q('[data-bar]');
+  function onScroll(){var el=doc.documentElement,max=el.scrollHeight-el.clientHeight;if(bar)bar.style.width=(max>0?Math.min(100,el.scrollTop/max*100):0)+'%';var cur=-1;links.forEach(function(a,i){var s=root.querySelector(a.getAttribute('href'));if(s&&s.getBoundingClientRect().top<win.innerHeight*0.4)cur=i;});links.forEach(function(a,i){a.classList.toggle('on',i===cur);});}
+  win.addEventListener('scroll',onScroll,{passive:true});onScroll();
+  links.concat(qa('.toc a')).forEach(function(a){a.addEventListener('click',function(e){var t=root.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}});});
+
+  // music: on by default; browsers only allow sound after the first tap, so it starts on the first interaction anywhere
+  opts=opts||{};
+  var music=SiteMusic(win),mbtns=qa('[data-music]'),want=!!opts.autoMusic;
+  if(!music.supported){mbtns.forEach(function(b){b.hidden=true;});}
+  function ui(){var pl=music.playing(),pend=want&&!pl;mbtns.forEach(function(x){x.setAttribute('aria-pressed',want);});
+    var l=q('[data-music-label]');if(l)l.textContent=pl?'音樂播放中':(pend?'音樂即將開始':'音樂');
+    var c=q('.music-cta');if(c)c.textContent=pl?'♪ 音樂播放中（點一下關閉）':(pend?'♪ 點一下畫面，音樂就會開始':'♪ 開啟音樂，慢慢看');}
+  function unlockAll(){ if(want){ music.unlock(); win.setTimeout(ui,120); } if(music.playing()){ ['pointerdown','keydown','touchend'].forEach(function(ev){doc.removeEventListener(ev,unlockAll,true);}); } }
+  if(want&&music.supported){ music.start(); music.onState(ui); ['pointerdown','keydown','touchend'].forEach(function(ev){doc.addEventListener(ev,unlockAll,true);}); }
+  mbtns.forEach(function(b){b.addEventListener('click',function(){
+    if(want&&!music.playing()){ music.unlock(); }
+    else if(want){ music.stop(); want=false; }
+    else { want=true; music.start(); music.onState(ui); music.unlock(); }
+    win.setTimeout(ui,150); ui(); });});
+  ui();
+  // scenes
+  qa('.scene').forEach(function(b){b.addEventListener('click',function(){qa('.scene').forEach(function(x){x.setAttribute('aria-pressed',x===b);});var s=scenes[+b.dataset.i]||{},p=SITE_PRODUCTS[s.p]||SITE_PRODUCTS.ampoule;
+    q('[data-ans-img]').src=p.img;q('[data-ans-img]').alt=p.name;q('[data-ans-name]').textContent=p.name;q('[data-ans-spec]').textContent=p.spec;q('[data-ans-why]').textContent=s.why||'';q('[data-ans-tag]').textContent=(s.t||'')+' 的你';});});
+  // timer
+  var C=326.73,arc=q('[data-arc]'),sec=q('[data-sec]'),btn=q('[data-timer]'),rs=qa('[data-rs]'),raf=null,t0=0;
+  var msg=['01 肌光露：倒在手心，輕拍全臉。','02 安瓶精華：兩三滴，按壓到吸收。','03 修護面霜：薄薄一層，把水分鎖住。'];
+  function frame(now){var el=Math.min(60,(now-t0)/1000);sec.textContent=Math.ceil(60-el);arc.setAttribute('stroke-dashoffset',String(C*el/60));var i=el<15?0:el<40?1:2;rs.forEach(function(r,k){r.classList.toggle('on',k===i&&el<60);});q('[data-rstat]').textContent=el<60?msg[i]:'完成。今天也辛苦了。';if(el<60)raf=win.requestAnimationFrame(frame);else{raf=null;btn.textContent='再來一次';rs.forEach(function(r){r.classList.add('on');});}}
+  if(btn)btn.addEventListener('click',function(){if(raf)win.cancelAnimationFrame(raf);t0=win.performance.now();btn.textContent='進行中…';raf=win.requestAnimationFrame(frame);});
+  // flips
+  qa('.flip').forEach(function(f){f.addEventListener('click',function(){f.setAttribute('aria-pressed',f.getAttribute('aria-pressed')!=='true');});});
+  // reply
+  var acs=qa('.ac'),val=function(k){return (q('[data-f="'+k+'"]').value||'').trim();};
+  acs.forEach(function(c){c.addEventListener('click',function(){acs.forEach(function(x){x.setAttribute('aria-pressed',x===c);});q('[data-ship]').hidden=c.dataset.v!=='send';q('[data-err]').hidden=true;q('[data-out]').hidden=true;});});
+  var subj='Re: 我們把 '+(d.channel||d.creator_name||'')+' 的故事整理成一頁｜Angel\'s Liquid 品牌合作';
+  function build(){var v=acs.filter(function(x){return x.getAttribute('aria-pressed')==='true';})[0].dataset.v;
+    var n=val('name'),ph=val('phone'),ad=val('addr'),note=val('note'),miss=[];
+    if(v==='send')miss=[!n&&'聯絡人',!ph&&'聯絡電話',!ad&&'收件地址'].filter(Boolean);
+    var t='Pei 你好，\n\n';
+    if(v==='send')t+='我們想試試看三款產品，寄送資料如下：\n聯絡人：'+n+'\n聯絡電話：'+ph+'\n收件地址：'+ad+'\n';
+    else if(v==='more')t+='想先多了解合作方式，方便的話再跟我們說說。\n';else t+='這次先不用，謝謝你做的這一頁。\n';
+    if(note)t+='\n'+note+'\n';t+='\n'+sign;return {t:t,miss:miss};}
+  function refresh(){var r=build();q('[data-make]').setAttribute('href','mailto:'+SITE_EMAIL+'?subject='+encodeURIComponent(subj)+'&body='+encodeURIComponent(r.t));}
+  qa('[data-f]').forEach(function(i){i.addEventListener('input',refresh);});acs.forEach(function(c){c.addEventListener('click',refresh);});refresh();
+  q('[data-make]').addEventListener('click',function(e){var r=build(),err=q('[data-err]');err.hidden=true;
+    if(r.miss.length){e.preventDefault();err.textContent='請填寫'+r.miss.join('、')+'，我們才能寄出。';err.hidden=false;q('[data-out]').hidden=true;return;}
+    refresh();q('[data-out-text]').textContent=r.t;q('[data-copied]').hidden=true;win.setTimeout(function(){q('[data-out]').hidden=false;},600);});
+  q('[data-copy]').addEventListener('click',function(){var t=q('[data-out-text]').textContent,ok=function(){q('[data-copied]').hidden=false;};var sel=function(){var r=doc.createRange();r.selectNodeContents(q('[data-out-text]'));var s=win.getSelection();s.removeAllRanges();s.addRange(r);};try{win.navigator.clipboard.writeText(t).then(ok,sel);}catch(e){sel();}});
+}
+
+(function(){var d={"c1": {"intro": "我們從搞什麼玩的安編一路看到現在，最打動我們的，是你每一步都選了自己想做的事。", "mark": "自己的方向", "quote": null, "reflection": "頻道介紹只寫了一句「當個快樂的玩家」。我們覺得這就是你：不急著證明什麼，只是認真玩自己喜歡的事。", "timeline": [{"b": "搞什麼玩的編輯", "k": "安編", "s": "因為神似 Hani，被大家記住。"}, {"b": "兩個人的頻道", "k": "安安邊緣子", "s": "和阿憲一起經營，一路累積觀眾。"}, {"b": "開了麻姑師太", "k": "2019", "s": "拍自己想拍的穿搭、彩妝、美食。"}, {"b": "當個快樂的玩家", "k": "Now", "s": "《快樂馬鈴薯》還在陪大家下班。"}], "title": "一直照自己的方向走"}, "c2": {"bridge": "診所裡的人氣成分，我們想放進你錄完 Podcast、收工回家後的洗手台。", "intro": "Angel's Liquid 2016 年在首爾成立，自己的工廠、自己的研發團隊，十年來只研究穀胱甘肽這一個成分。", "mark": "做了十年", "title": "我們也只做一件事，做了十年"}, "c3": {"mark": "跟我們很像", "pairs": [{"mid": "忠於\n初衷", "us_b": "十年只做穀胱甘肽", "us_s": "從 2016 年到現在，沒換過題目。", "you_b": "照自己的方向走", "you_s": "從安安邊緣子走到麻姑師太。"}, {"mid": "慢慢\n來", "us_b": "300→7,000ppm", "us_s": "花了十年，一點一點往上做。", "you_b": "先用久了再說", "you_s": "第一次合作，先看長期使用的感受。"}, {"mid": "真實", "us_b": "不加香精", "us_s": "保留穀胱甘肽原料本來的氣味。", "you_b": "不修飾的閒聊", "you_s": "在快樂馬鈴薯聊生活大小事。"}], "title": "我們發現，你跟我們很像"}, "c4": {"default": 1, "intro": "點一個，我們告訴你那個時刻最適合哪一瓶。", "mark": "哪一個時刻", "routine_title": "比一集 Podcast 的開場還短：60 秒保養", "scenes": [{"b": "出門拍片前", "p": "toner", "s": "鏡頭很誠實，氣色也是。", "t": "10:00", "why": "化妝水質地、像水一樣輕，大容量可以全臉打底，拍兩下就能接著上妝。"}, {"b": "錄完一集 Podcast", "p": "ampoule", "s": "跟夥伴聊完，終於安靜下來。", "t": "23:00", "why": "兩三滴就好。穀胱甘肽 7,000ppm 脂質體包覆，加上菸鹼醯胺 5% 和腺苷，集中照顧氣色和細紋。"}, {"b": "再打一場就睡", "p": "ampoule", "s": "玩家的夜晚總是比較長。", "t": "01:00", "why": "開下一場前先擦好。腺苷是韓國公告的抗皺機能成分，菸鹼醯胺 5% 一起照顧氣色。"}, {"b": "台灣開始變乾", "p": "cream", "s": "換季時，皮膚最先知道。", "t": "11 月", "why": "最後一層鎖住水分。添加角鯊烷，質地柔滑不黏，秋冬擦完馬上躺下也舒服。"}], "title": "你最常是哪一個時刻？"}, "c5": {"flips": [{"a": "穀胱甘肽的結構含硫，原料本身就有氣味。我們不加香精去蓋掉它，選擇保留原料真實的樣子。", "q": "為什麼這瓶打開，會聞到一點特別的味道？"}, {"a": "對。它是人體本來就有的抗氧化成分，在韓國醫美診所也很受歡迎。我們把它穩定地放進每天的保養裡。", "q": "穀胱甘肽，其實你身體裡本來就有？"}, {"a": "可以。三款都通過皮膚刺激測試、判定無刺激，不加香精，質地清爽，錄完節目大家輪流擦也沒負擔。", "q": "快樂夥伴也可以一起用嗎？"}]}, "c6": {"aside": "只是靈感，怎麼拍、拍不拍，都由阿民和團隊決定。", "ideas": [{"fmt": "Reels · 90 秒", "how": "打完一場、關燈前的 90 秒。洗臉、三個步驟，像按下存檔。", "title": "玩家的存檔點"}, {"fmt": "Podcast · 一段", "how": "請快樂夥伴盲聞猜一猜，再聊為什麼品牌不加香精。", "title": "這瓶到底什麼味道"}, {"fmt": "限動 · 30 天", "how": "每天一句使用心得，不急著下結論，就是你們說的長期使用。", "title": "第一次的 30 天"}], "mark": "三個玩法", "title": "幫你先想了三個玩法"}, "channel": "阿民", "creator_name": "阿民", "email": {"greeting": "歐文、阿民 你好，", "opening": "我是 Angel's Liquid 台灣的 Pei。八月寫過幾封比較長的信，這次不談檔期，只把阿民的故事和我們的故事整理成一頁。", "subject": "我們把 阿民 的故事整理成一頁｜Angel's Liquid 品牌合作"}, "hero": {"eyebrow": "For 阿民 · 專屬頁面", "sub": "從安安邊緣子到麻姑師太，你一直在拍自己想拍的東西。這一頁想留給螢幕外的阿民，我們把你的故事和我們的故事整理成六個小章節，慢慢看就好。", "title_l1": "當個快樂的玩家，", "title_l2": "也要有存檔點"}, "reply": {"sign": "阿民", "title": "看到這裡，謝謝你"}, "slug": "haley-duu"};var app=document.getElementById('app');app.innerHTML=renderSite(d);bindSite(app,d,window,{autoMusic:true});})();
+</script></body></html>
